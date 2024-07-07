@@ -1,0 +1,50 @@
+
+task 11:
+
+public class CountArray {   
+public static void count( ) {   
+//Initialize array    
+int [] a = new int [] {1, 2, 3, 4, 5};    
+//Number of elements present in an array can be found using the length   
+System.out.println("Number of elements present in given array: " + 
+arr.length);      
+}   
+}  } 
+
+test case:
+import static org.junit.Assert.*;   
+importorg.junit.Test;   
+public class TestLogic {   
+@Test   
+public void testFindMax(intarr[]) 
+{   
+assertEquals(4,Calculation.findMax(new int[]{1,3,4,2}));   
+assertEquals(-1,Calculation.findMax(new int[]{-12,-1,-3,-4,-2}));   
+}   
+}   
+
+task 12:
+
+packagecom.javatpoint.logic;   
+public class Calculation {   
+public static intfindMax(intarr[]){   
+int max=arr[0];//arr[0] instead of 0   
+for(inti=1;i<arr.length;i++){   
+if(max<arr[i])   
+max=arr[i];   
+}   
+
+test case:
+import static org.junit.Assert.*;   
+importorg.junit.Test;   
+public class TestLogic {   
+@Test   
+public void testcount(){   
+assertEquals(4,Calculation.count(new int[]{1,3,4,2}));   
+assertEquals(2,Calculation.count(new int[]{2,3}));   
+assertEquals(0,Calculation.count(new int[]{}));   
+}   
+} 
+return max;   
+}   
+}   
